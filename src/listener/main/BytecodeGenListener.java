@@ -252,9 +252,6 @@ public class BytecodeGenListener extends MiniCBaseListener implements ParseTreeL
 			rt += "mov eax, DWORD PTR [rbp-" + symbolTable.getVarId(idName) + "]\n";
 			newTexts.put(ctx, rt);
 		}
-		else if(isVoidReturn(ctx)) {
-			newTexts.put(ctx, "return\n");
-		}
 		// <(4) Fill here>
 	}
 

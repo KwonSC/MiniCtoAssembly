@@ -17,7 +17,7 @@ params		: param (',' param)*
 		| VOID				
 		|			;
 param		: type_spec IDENT		
-		| type_spec IDENT '[' ']'	;
+		| type_spec IDENT ep[' ']'	;
 stmt		: expr_stmt			
 		| compound_stmt			
 		| if_stmt			
